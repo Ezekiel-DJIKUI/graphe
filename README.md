@@ -1,10 +1,10 @@
 # Projet B6_2 - Analyse de graphes en Python
 
-> 🔍 Un projet axé sur l’analyse de graphes via Python, combinant logique algorithmique et modélisation mathématique pour résoudre des problématiques complexes avec clarté et efficacité.
+>  Un projet axé sur l’analyse de graphes via Python, combinant logique algorithmique et modélisation mathématique pour résoudre des problématiques complexes avec clarté et efficacité.
 
 ---
 
-## 🧠 Présentation du projet
+## Présentation du projet
 
 Ce projet illustre l'application concrète d’algorithmes de recherche opérationnelle à la résolution de problèmes sur les graphes, en s’appuyant sur les fondements mathématiques et la souplesse du langage Python.  
 La structure du code, l’organisation des fichiers et la rigueur dans le traitement algorithmique témoignent d’une approche analytique orientée performance et précision.  
@@ -13,7 +13,7 @@ L’ensemble reflète un travail soigné, associant logique mathématique, modé
 
 ---
 
-## 📁 Contenu du projet
+## Contenu du projet
 
 ### Dossier `B6/`
 - `B6_1.py` : script principal pour l’analyse ou le traitement des graphes
@@ -26,7 +26,7 @@ L’ensemble reflète un travail soigné, associant logique mathématique, modé
 
 ---
 
-## 🚀 Exécution
+## Exécution
 
 ### Prérequis :
 - Python 3.x

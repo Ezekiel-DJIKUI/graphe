@@ -1,0 +1,60 @@
+Last login: Sun Dec 15 02:22:33 on ttys006
+fdielo@MacBook-Air-de-Faical ~ % cd desktop
+fdielo@MacBook-Air-de-Faical desktop % cd projet
+fdielo@MacBook-Air-de-Faical projet % python3 B6_1.py graphe6.txt
+
+Matrice des Capacités:
+0 4 2 0 0 0
+0 0 0 4 0 1
+0 0 0 4 2 0
+0 0 0 0 2 2
+0 0 0 0 0 2
+0 0 0 0 0 0
+
+Matrice des Coûts:
+0 3 1 0 0 0
+0 0 0 2 0 4
+0 0 0 1 5 0
+0 0 0 0 3 1
+0 0 0 0 0 6
+0 0 0 0 0 0
+
+Choisissez un algorithme:
+1. Ford-Fulkerson
+2. Pousser-Réétiqueter
+3. Flot à Coût Minimal avec Bellman
+Entrez votre choix (1, 2 ou 3): 3
+
+Matrice résiduelle après mise à jour:
+0 3 2 0 0 0
+1 0 0 4 0 0
+0 0 0 4 2 0
+0 0 0 0 2 2
+0 0 0 0 0 2
+0 1 0 0 0 0
+
+Matrice résiduelle après mise à jour:
+0 1 2 0 0 0
+3 0 0 2 0 0
+0 0 0 4 2 0
+0 2 0 0 2 0
+0 0 0 0 0 2
+0 1 0 2 0 0
+
+Matrice résiduelle après mise à jour:
+0 1 0 0 0 0
+3 0 0 2 0 0
+2 0 0 4 0 0
+0 2 0 0 2 0
+0 0 2 0 0 0
+0 1 0 2 2 0
+
+Matrice des capacités résiduelles après mise à jour:
+0 4 0 0 0 0
+0 0 0 4 0 1
+2 0 0 2 2 0
+0 0 2 0 2 0
+0 0 0 0 0 2
+0 0 0 2 0 0
+Flot à coût minimal: 2, Coût total: 6
+fdielo@MacBook-Air-de-Faical projet % 

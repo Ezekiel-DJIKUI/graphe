@@ -1,0 +1,80 @@
+Last login: Sun Dec 15 02:23:35 on ttys006
+fdielo@MacBook-Air-de-Faical ~ % cd desktop
+fdielo@MacBook-Air-de-Faical desktop % cd projet
+fdielo@MacBook-Air-de-Faical projet % python3 B6_1.py graphe7.txt
+
+Matrice des Capacités:
+0 5 0 8 5 0
+0 0 1 0 0 7
+0 0 0 0 0 1
+0 3 0 0 0 9
+0 0 0 4 0 1
+0 0 0 0 0 0
+
+Matrice des Coûts:
+0 4 0 2 4 0
+0 0 2 0 0 3
+0 0 0 0 0 3
+0 4 0 0 0 6
+0 0 0 2 0 2
+0 0 0 0 0 0
+
+Choisissez un algorithme:
+1. Ford-Fulkerson
+2. Pousser-Réétiqueter
+3. Flot à Coût Minimal avec Bellman
+Entrez votre choix (1, 2 ou 3): 2
+Hauteur après réétiquetage du sommet 1: [6, 1, 0, 0, 0, 0]
+
+Flot après push de 1 vers 2:
+0 5 0 8 5 0
+-5 0 1 0 0 0
+0 -1 0 0 0 0
+-8 0 0 0 0 0
+-5 0 0 0 0 0
+0 0 0 0 0 0
+
+Flot après push de 1 vers 5:
+0 5 0 8 5 0
+-5 0 1 0 0 4
+0 -1 0 0 0 0
+-8 0 0 0 0 0
+-5 0 0 0 0 0
+0 -4 0 0 0 0
+Hauteur après réétiquetage du sommet 3: [6, 1, 0, 1, 0, 0]
+
+Flot après push de 3 vers 5:
+0 5 0 8 5 0
+-5 0 1 0 0 4
+0 -1 0 0 0 0
+-8 0 0 0 0 8
+-5 0 0 0 0 0
+0 -4 0 -8 0 0
+Hauteur après réétiquetage du sommet 4: [6, 1, 0, 1, 1, 0]
+
+Flot après push de 4 vers 5:
+0 5 0 8 5 0
+-5 0 1 0 0 4
+0 -1 0 0 0 0
+-8 0 0 0 0 8
+-5 0 0 0 0 1
+0 -4 0 -8 -1 0
+Hauteur après réétiquetage du sommet 4: [6, 1, 0, 1, 2, 0]
+
+Flot après push de 4 vers 3:
+0 5 0 8 5 0
+-5 0 1 0 0 4
+0 -1 0 0 0 0
+-8 0 0 0 -4 8
+-5 0 0 4 0 1
+0 -4 0 -8 -1 0
+
+Matrice de flot finale:
+0 5 0 8 5 0
+-5 0 1 0 0 4
+0 -1 0 0 0 0
+-8 0 0 0 -4 8
+-5 0 0 4 0 1
+0 -4 0 -8 -1 0
+Flot maximal avec Pousser-Réétiqueter: 18
+fdielo@MacBook-Air-de-Faical projet % 

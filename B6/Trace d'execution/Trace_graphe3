@@ -1,0 +1,72 @@
+Last login: Sun Dec 15 02:17:47 on ttys006
+fdielo@MacBook-Air-de-Faical ~ % cd desktop
+fdielo@MacBook-Air-de-Faical desktop % cd projet 
+fdielo@MacBook-Air-de-Faical projet % python3 B6_1.py graphe3.txt   
+
+Matrice des Capacités:
+0 5 8 4 0 0 0 0
+0 0 4 0 7 0 0 0
+0 0 0 0 0 7 8 0
+0 0 7 0 0 0 4 0
+0 0 0 0 0 6 0 0
+0 0 0 0 0 0 0 7
+0 0 0 0 0 0 0 10
+0 0 0 0 0 0 0 0
+
+Choisissez un algorithme:
+1. Ford-Fulkerson
+2. Pousser-Réétiqueter
+3. Flot à Coût Minimal avec Bellman
+Entrez votre choix (1, 2 ou 3): 1
+
+Matrice résiduelle après mise à jour:
+0 5 1 4 0 0 0 0
+0 0 4 0 7 0 0 0
+7 0 0 0 0 0 8 0
+0 0 7 0 0 0 4 0
+0 0 0 0 0 6 0 0
+0 0 7 0 0 0 0 0
+0 0 0 0 0 0 0 10
+0 0 0 0 0 7 0 0
+
+Matrice résiduelle après mise à jour:
+0 5 0 4 0 0 0 0
+0 0 4 0 7 0 0 0
+8 0 0 0 0 0 7 0
+0 0 7 0 0 0 4 0
+0 0 0 0 0 6 0 0
+0 0 7 0 0 0 0 0
+0 0 1 0 0 0 0 9
+0 0 0 0 0 7 1 0
+
+Matrice résiduelle après mise à jour:
+0 5 0 0 0 0 0 0
+0 0 4 0 7 0 0 0
+8 0 0 0 0 0 7 0
+4 0 7 0 0 0 0 0
+0 0 0 0 0 6 0 0
+0 0 7 0 0 0 0 0
+0 0 1 4 0 0 0 5
+0 0 0 0 0 7 5 0
+
+Matrice résiduelle après mise à jour:
+0 1 0 0 0 0 0 0
+4 0 0 0 7 0 0 0
+8 4 0 0 0 0 3 0
+4 0 7 0 0 0 0 0
+0 0 0 0 0 6 0 0
+0 0 7 0 0 0 0 0
+0 0 5 4 0 0 0 1
+0 0 0 0 0 7 9 0
+
+Matrice résiduelle après mise à jour:
+0 0 0 0 0 0 0 0
+5 0 0 0 6 0 0 0
+8 4 0 0 0 1 2 0
+4 0 7 0 0 0 0 0
+0 1 0 0 0 5 0 0
+0 0 6 0 1 0 0 0
+0 0 6 4 0 0 0 0
+0 0 0 0 0 7 10 0
+Flot maximal avec Ford-Fulkerson: 17
+fdielo@MacBook-Air-de-Faical projet % 

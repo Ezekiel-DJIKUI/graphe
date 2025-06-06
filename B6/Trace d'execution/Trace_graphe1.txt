@@ -1,0 +1,96 @@
+Last login: Sun Dec 15 00:45:59 on ttys006
+fdielo@MacBook-Air-de-Faical ~ % cd desktop
+fdielo@MacBook-Air-de-Faical desktop % cd projet
+fdielo@MacBook-Air-de-Faical projet % python3 B6_1.py graphe1.txt
+
+Matrice des Capacités:
+0 9 5 7 0 0 0 0
+0 0 6 0 6 0 0 0
+0 0 0 0 0 7 0 0
+0 0 0 0 0 2 8 0
+0 0 3 0 0 0 0 8
+0 0 0 0 0 0 0 10
+0 0 0 0 0 3 0 5
+0 0 0 0 0 0 0 0
+
+Choisissez un algorithme:
+1. Ford-Fulkerson
+2. Pousser-Réétiqueter
+3. Flot à Coût Minimal avec Bellman
+Entrez votre choix (1, 2 ou 3): 2
+Hauteur après réétiquetage du sommet 1: [8, 1, 0, 0, 0, 0, 0, 0]
+
+Flot après push de 1 vers 2:
+0 9 5 7 0 0 0 0
+-9 0 6 0 0 0 0 0
+-5 -6 0 0 0 0 0 0
+-7 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+
+Flot après push de 1 vers 4:
+0 9 5 7 0 0 0 0
+-9 0 6 0 3 0 0 0
+-5 -6 0 0 0 0 0 0
+-7 0 0 0 0 0 0 0
+0 -3 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+Hauteur après réétiquetage du sommet 2: [8, 1, 1, 0, 0, 0, 0, 0]
+
+Flot après push de 2 vers 5:
+0 9 5 7 0 0 0 0
+-9 0 6 0 3 0 0 0
+-5 -6 0 0 0 7 0 0
+-7 0 0 0 0 0 0 0
+0 -3 0 0 0 0 0 0
+0 0 -7 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+Hauteur après réétiquetage du sommet 2: [8, 1, 2, 0, 0, 0, 0, 0]
+
+Flot après push de 2 vers 1:
+0 9 5 7 0 0 0 0
+-9 0 2 0 3 0 0 0
+-5 -2 0 0 0 7 0 0
+-7 0 0 0 0 0 0 0
+0 -3 0 0 0 0 0 0
+0 0 -7 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+Hauteur après réétiquetage du sommet 3: [8, 1, 2, 1, 0, 0, 0, 0]
+
+Flot après push de 3 vers 5:
+0 9 5 7 0 0 0 0
+-9 0 2 0 3 0 0 0
+-5 -2 0 0 0 7 0 0
+-7 0 0 0 0 2 0 0
+0 -3 0 0 0 0 0 0
+0 0 -7 -2 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+
+Flot après push de 3 vers 6:
+0 9 5 7 0 0 0 0
+-9 0 2 0 3 0 0 0
+-5 -2 0 0 0 7 0 0
+-7 0 0 0 0 2 5 0
+0 -3 0 0 0 0 0 0
+0 0 -7 -2 0 0 0 0
+0 0 0 -5 0 0 0 0
+0 0 0 0 0 0 0 0
+
+Matrice de flot finale:
+0 9 5 7 0 0 0 0
+-9 0 2 0 3 0 0 0
+-5 -2 0 0 0 7 0 0
+-7 0 0 0 0 2 5 0
+0 -3 0 0 0 0 0 0
+0 0 -7 -2 0 0 0 0
+0 0 0 -5 0 0 0 0
+0 0 0 0 0 0 0 0
+Flot maximal avec Pousser-Réétiqueter: 21
+fdielo@MacBook-Air-de-Faical projet % 

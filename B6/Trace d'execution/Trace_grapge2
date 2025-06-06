@@ -1,0 +1,24 @@
+Last login: Sun Dec 15 02:15:40 on ttys006
+fdielo@MacBook-Air-de-Faical ~ % cd desktop
+fdielo@MacBook-Air-de-Faical desktop % cd projet
+fdielo@MacBook-Air-de-Faical projet % python3 B6_1.py graphe2.txt
+
+Matrice des Capacités:
+0 16 3 8 0 0 0 0 0 0
+0 0 3 0 3 3 4 0 0 0
+0 0 0 7 0 5 0 0 0 0
+0 0 0 0 0 0 0 0 7 0
+0 0 0 0 0 0 1 8 0 0
+0 0 0 0 8 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 8
+0 0 0 0 0 0 3 0 4 6
+0 0 0 0 0 4 0 0 0 8
+0 0 0 0 0 0 0 0 0 0
+
+Choisissez un algorithme:
+1. Ford-Fulkerson
+2. Pousser-Réétiqueter
+3. Flot à Coût Minimal avec Bellman
+Entrez votre choix (1, 2 ou 3): 3
+La matrice des coûts n'est pas disponible pour cet algorithme.
+fdielo@MacBook-Air-de-Faical projet % 
